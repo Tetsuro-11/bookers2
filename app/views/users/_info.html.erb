@@ -1,0 +1,18 @@
+<h2>User info</h2>
+<table class='table'>
+  <tr>
+    <%= attachment_image_tag user, :profile_image, :fill, 5, 5, fallback: "no_image.svg", size: "50x50"%>
+  </tr>
+  <tr>
+     <th>name</th>
+     <th>test2</th>
+  </tr>
+  <tr>
+     <th>introduction</th>
+     <th></th>
+  </tr>
+</table>
+
+<div class='row'>
+  <%= link_to "設定", edit_user_path(current_user) %>
+</div>
